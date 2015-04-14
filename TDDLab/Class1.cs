@@ -57,9 +57,6 @@ namespace TDDLab
             IEnumerable<char> distinctChars = query.Distinct();
 
             return distinctChars;
-
-
-            throw new NotImplementedException();
         }
     }
     
