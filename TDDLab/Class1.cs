@@ -58,6 +58,11 @@ namespace TDDLab
 
             return distinctChars;
         }
+
+        public object OnlyLowerCase()
+        {
+            throw new NotImplementedException();
+        }
     }
     
     

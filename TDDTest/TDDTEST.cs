@@ -47,6 +47,16 @@ namespace TDDTest
         
         }
 
+          [Fact]
+           public void Test4()
+        {
+            var stringProcessor = new StringInput("KEEPcalm");
+            var answer = stringProcessor.OnlyLowerCase();
+            var expected = new List<char>{
+                'c', 'a', 'l', 'm' 
+            };
+        }
+
     }
     
     
