@@ -49,7 +49,7 @@ namespace TDDLab
             return query;
         }
 
-        public object RemoveDuplicateChars()
+        public IEnumerable<char> RemoveDuplicateChars()
 
         {
             var query = from c in p
