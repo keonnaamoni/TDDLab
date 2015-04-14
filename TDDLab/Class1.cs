@@ -58,10 +58,15 @@ namespace TDDLab
 
             return distinctChars;
         }
+        const string UppcaseChars = "ABCDEFGHIJKLMNOPQURSTUVWXYZ";
 
         public object OnlyLowerCase()
         {
-            throw new NotImplementedException();
+            var query = from c in p
+                        where UppcaseChars.IndexOf(c) != -1
+                        select c;
+
+            return query;
         }
     }
     
