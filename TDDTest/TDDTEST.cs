@@ -34,6 +34,19 @@ namespace TDDTest
 
         }
 
+        [Fact]
+        public void Test3() 
+        {
+            var stringProcessor = new StringInput("keep cool");
+            var answer = stringProcessor.RemoveDuplicateChars();
+            var expected = new List<char>{
+                'k', 'e', 'p', 'c', 'o', 'l'
+            };
+
+            Assert.Equal(expected, answer);
+        
+        }
+
     }
     
     
