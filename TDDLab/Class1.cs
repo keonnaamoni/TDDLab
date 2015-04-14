@@ -31,7 +31,7 @@ namespace TDDLab
             return query;
         }
 
-        public object alphaOrderConsonants()
+        public IEnumerable<char> alphaOrderConsonants()
         {
             var query = from c in p
                         where c != 'a'
@@ -42,6 +42,9 @@ namespace TDDLab
                         where c != ' '
                         where c != '.'
                         select c;
+
+            query = query.OrderBy(c => c);
+
 
             return query;
         }

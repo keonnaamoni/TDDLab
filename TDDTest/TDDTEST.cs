@@ -24,10 +24,10 @@ namespace TDDTest
         [Fact]
         public void Test2()
         {
-            var stringProcessor = new StringInput("Keep calm.");
+            var stringProcessor = new StringInput("keep calm.");
             var answer = stringProcessor.alphaOrderConsonants();
             var expected = new List<char>{
-                'c', 'K', 'l', 'm', 'p'
+                'c', 'k', 'l', 'm', 'p'
             };
 
             Assert.Equal(expected, answer);
