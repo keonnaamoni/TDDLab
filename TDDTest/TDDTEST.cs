@@ -13,9 +13,6 @@ namespace TDDTest
          [Fact]
         public void Test1()
         {
-<<<<<<< HEAD
-
-=======
             var stringProcessor = new StringInput("Keep calm.");
 
             var answer = stringProcessor.pullConsonants();
@@ -23,13 +20,6 @@ namespace TDDTest
                 'K', 'p', 'c', 'l', 'm',
             };
             Assert.Equal(expected, answer);
-
-
-             
-             
-             //create test case to print only constants in string
-            //TESTING
->>>>>>> origin/master
 
 
         }
