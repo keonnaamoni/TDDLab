@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TDDLab;
 using Xunit;
 
@@ -10,7 +6,7 @@ namespace TDDTest
 {
     public class TestConsonants
     {
-         [Fact]
+        [Fact]
         public void Test1()
         {
             var stringProcessor = new StringInput("Keep calm.");
@@ -24,9 +20,21 @@ namespace TDDTest
 
             Assert.Equal(expected, answer);
         }
+
+        [Fact]
+        public void Test2()
+        {
+            var stringProcessor = new StringInput("Keep calm.");
+            var answer = stringProcessor.alphaOrderConsonants();
+            var expected = new List<char>{
+                'c', 'k', 'l', 'm', 'p'
+            };
+
+            Assert.Equal(expected, answer);
+
+        }
+
     }
-    
-   
     
     
 }

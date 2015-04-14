@@ -30,6 +30,11 @@ namespace TDDLab
 
             return query;
         }
+
+        public object alphaOrderConsonants()
+        {
+            throw new NotImplementedException();
+        }
     }
     
     
