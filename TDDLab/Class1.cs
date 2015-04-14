@@ -33,7 +33,17 @@ namespace TDDLab
 
         public object alphaOrderConsonants()
         {
-            throw new NotImplementedException();
+            var query = from c in p
+                        where c != 'a'
+                        where c != 'e'
+                        where c != 'i'
+                        where c != 'o'
+                        where c != 'u'
+                        where c != ' '
+                        where c != '.'
+                        select c;
+
+            return query;
         }
     }
     

@@ -27,7 +27,7 @@ namespace TDDTest
             var stringProcessor = new StringInput("Keep calm.");
             var answer = stringProcessor.alphaOrderConsonants();
             var expected = new List<char>{
-                'c', 'k', 'l', 'm', 'p'
+                'c', 'K', 'l', 'm', 'p'
             };
 
             Assert.Equal(expected, answer);
