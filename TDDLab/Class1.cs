@@ -48,6 +48,19 @@ namespace TDDLab
 
             return query;
         }
+
+        public object RemoveDuplicateChars()
+
+        {
+            var query = from c in p
+                        select c;
+            IEnumerable<char> distinctChars = query.Distinct();
+
+            return distinctChars;
+
+
+            throw new NotImplementedException();
+        }
     }
     
     
