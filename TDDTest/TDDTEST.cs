@@ -16,12 +16,13 @@ namespace TDDTest
             var stringProcessor = new StringInput("Keep calm.");
 
             var answer = stringProcessor.pullConsonants();
-            var expected = new List<char>{
-                'K', 'p', 'c', 'l', 'm',
+
+            var expected = new List<char>
+            {
+                'K', 'p', 'c', 'l', 'm'
             };
+
             Assert.Equal(expected, answer);
-
-
         }
     }
     

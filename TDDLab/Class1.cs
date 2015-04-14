@@ -7,17 +7,28 @@ using System.Threading.Tasks;
 namespace TDDLab
 {
     public class StringInput {
+
         private string p;
 
         public StringInput(string p)
         {
-            // TODO: Complete member initialization
             this.p = p;
         }
 
-        public object pullConsonants()
+        public IEnumerable<char> pullConsonants()
         {
-            throw new NotImplementedException();
+
+            var query = from c in p
+                        where c != 'a'
+                        where c != 'e'
+                        where c != 'i'
+                        where c != 'o'
+                        where c != 'u'
+                        where c != ' '
+                        where c != '.'
+                        select c;
+
+            return query;
         }
     }
     
