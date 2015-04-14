@@ -7,11 +7,13 @@ using Xunit;
 
 namespace TDDTest
 {
-    public class TestConstanants
+    public class TestConsonants
     {
          [Fact]
         public void Test1()
         {
+             //create test case to print only constants in string
+
 
         }
     }
