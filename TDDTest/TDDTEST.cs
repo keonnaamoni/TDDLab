@@ -6,6 +6,7 @@ namespace TDDTest
 {
     public class TestConsonants
     {
+        // Return an IEnumerable<char> that contains all the consonants.
         [Fact]
         public void Test1()
         {
@@ -21,6 +22,7 @@ namespace TDDTest
             Assert.Equal(expected, answer);
         }
 
+        // Return the consonants in alphabetical order.
         [Fact]
         public void Test2()
         {
@@ -34,6 +36,7 @@ namespace TDDTest
 
         }
 
+        //Return only one copy of each consonant used in the string.
         [Fact]
         public void Test3() 
         {
@@ -47,14 +50,17 @@ namespace TDDTest
         
         }
 
-          [Fact]
+        // Return the consonants, all lower case.
+        [Fact]
            public void Test4()
         {
             var stringProcessor = new StringInput("KEEPcalm");
             var answer = stringProcessor.OnlyLowerCase();
             var expected = new List<char>{
-                'c', 'a', 'l', 'm' 
+                'c', 'l', 'm' 
             };
+
+            Assert.Equal(expected, answer);
         }
 
     }

@@ -58,12 +58,20 @@ namespace TDDLab
 
             return distinctChars;
         }
-        const string UppcaseChars = "ABCDEFGHIJKLMNOPQURSTUVWXYZ";
 
-        public object OnlyLowerCase()
+        const string UppcaseChars = "abcdefghijklmnopqrstuvwxyz";
+
+        public IEnumerable<char> OnlyLowerCase()
         {
             var query = from c in p
                         where UppcaseChars.IndexOf(c) != -1
+                        where c != 'a'
+                        where c != 'e'
+                        where c != 'i'
+                        where c != 'o'
+                        where c != 'u'
+                        where c != ' '
+                        where c != '.'
                         select c;
 
             return query;
