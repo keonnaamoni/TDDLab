@@ -38,7 +38,7 @@ namespace TDDTest
         [Fact]
         public void Test3() 
         {
-            var stringProcessor = new StringInput("keep calm.");
+            var stringProcessor = new StringInput("keep calllm.");
             var answer = stringProcessor.RemoveDuplicateChars();
             var expected = new List<char>{
                 'k', 'p', 'c', 'l','m'
