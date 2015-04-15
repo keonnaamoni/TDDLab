@@ -11,12 +11,10 @@ namespace TDDTest
         public void Test1()
         {
             var stringProcessor = new StringInput("keep calm.");
-
             var answer = stringProcessor.pullConsonants();
-
             var expected = new List<char>
             {
-                'k', 'p', 'c', 'l', 'm'
+                'k', 'p', 'c', 'l', 'm',
             };
 
             Assert.Equal(expected, answer);
@@ -43,7 +41,7 @@ namespace TDDTest
             var stringProcessor = new StringInput("keep calm.");
             var answer = stringProcessor.RemoveDuplicateChars();
             var expected = new List<char>{
-                'k', 'e', 'p', ' ', 'c', 'a', 'l','m','.'
+                'k', 'p', 'c', 'l','m'
             };
 
             Assert.Equal(expected, answer);

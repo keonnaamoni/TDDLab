@@ -53,7 +53,15 @@ namespace TDDLab
 
         {
             var query = from c in p
+                        where c != 'a'
+                        where c != 'e'
+                        where c != 'i'
+                        where c != 'o'
+                        where c != 'u'
+                        where c != ' '
+                        where c != '.'
                         select c;
+
             IEnumerable<char> distinctChars = query.Distinct();
 
             return distinctChars;
