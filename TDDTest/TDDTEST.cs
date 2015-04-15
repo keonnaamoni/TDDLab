@@ -9,7 +9,7 @@ namespace TDDTest
         [Fact]
         public void Test1()
         {
-            var stringProcessor = new StringInput("Keep calm.");
+            var stringProcessor = new StringInput("keep calm.");
 
             var answer = stringProcessor.pullConsonants();
 
