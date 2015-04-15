@@ -15,7 +15,7 @@ namespace TDDTest
 
             var expected = new List<char>
             {
-                'K', 'p', 'c', 'l', 'm'
+                'k', 'p', 'c', 'l', 'm'
             };
 
             Assert.Equal(expected, answer);
@@ -37,10 +37,10 @@ namespace TDDTest
         [Fact]
         public void Test3() 
         {
-            var stringProcessor = new StringInput("keep");
+            var stringProcessor = new StringInput("keep calm.");
             var answer = stringProcessor.RemoveDuplicateChars();
             var expected = new List<char>{
-                'k', 'e', 'p'
+                'k', 'e', 'p', ' ', 'c', 'a', 'l','m','.'
             };
 
             Assert.Equal(expected, answer);
